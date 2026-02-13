@@ -1,8 +1,35 @@
 import { motion } from 'framer-motion'
+import SEO from '../components/SEO'
 
 export default function About() {
   return (
     <div className="pt-32 pb-20 bg-black min-h-screen text-white">
+      <SEO
+        title="Ebru Erten Hakkında | Biyografi — Film Yapımcısı & Senarist"
+        description="Ebru Erten kimdir? Türkiye'nin en iyi film yapımcılarından biri olan Ebru Erten'in biyografisi. Dragon Film & DuvaFilm kurucusu, Aksoy Film ve Sea Film ile çalışmış vizyoner yapımcı ve senarist. Recep İvedik, Ali Kundilli, Çılgın Dersane yapımcısı."
+        canonical="https://ebruerten.com/about"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "Ebru Erten Hakkında",
+          "description": "Ebru Erten biyografisi — Türkiye'nin en başarılı film yapımcılarından ve senaristlerinden biri",
+          "mainEntity": {
+            "@type": "Person",
+            "name": "Ebru Erten",
+            "jobTitle": "Film Yapımcısı & Senarist",
+            "description": "En iyi Türk film yapımcısı ve senarist. Dragon Film & DuvaFilm kurucusu.",
+            "worksFor": [
+              { "@type": "Organization", "name": "Dragon Film" },
+              { "@type": "Organization", "name": "DuvaFilm" }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "İstanbul",
+              "addressCountry": "TR"
+            }
+          }
+        }}
+      />
       <div className="container mx-auto px-6">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

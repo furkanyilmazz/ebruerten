@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, MapPin, Send, CheckCircle, Film, Instagram } from 'lucide-react'
+import SEO from '../components/SEO'
 
 export default function Contact() {
   const [sent, setSent] = useState(false)
@@ -33,6 +34,27 @@ export default function Contact() {
 
   return (
     <div className="pt-32 pb-20 bg-black min-h-screen text-white">
+      <SEO
+        title="İletişim | Ebru Erten — Film Yapımcısı & Senarist"
+        description="Film yapımcısı ve senarist Ebru Erten ile iletişime geçin. Dragon Film & DuvaFilm — proje teklifleri, iş birlikleri ve sorularınız için. İstanbul, Türkiye."
+        canonical="https://ebruerten.com/contact"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Ebru Erten İletişim",
+          "description": "Film yapımcısı Ebru Erten ile iletişim",
+          "mainEntity": {
+            "@type": "Person",
+            "name": "Ebru Erten",
+            "email": "duvafilm@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "İstanbul",
+              "addressCountry": "TR"
+            }
+          }
+        }}
+      />
       <div className="container mx-auto px-6">
         <motion.div
            initial={{ opacity: 0, y: 20 }}

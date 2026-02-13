@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Newspaper, Film, ExternalLink, Star } from 'lucide-react'
+import SEO from '../components/SEO'
 
 const pressItems = [
   {
@@ -143,6 +144,11 @@ export default function Press() {
   
   return (
     <div className="pt-32 pb-20 bg-black min-h-screen text-white">
+      <SEO
+        title="Basın & Medya | Ebru Erten — Film Yapımcısı Haberleri"
+        description="Ebru Erten ile ilgili basın haberleri, film incelemeleri ve medya içerikleri. Beyazperde, SinemaTürk, HaberTürk ve diğer kaynaklarda Ebru Erten."
+        canonical="https://ebruerten.com/press"
+      />
       <div className="container mx-auto px-6">
         <motion.div
            initial={{ opacity: 0, y: 20 }}

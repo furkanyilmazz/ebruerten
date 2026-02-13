@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Calendar, Clock, ArrowRight } from 'lucide-react'
 import { blogPosts } from '../data/blogPosts'
+import SEO from '../components/SEO'
 
 const categoryColors: Record<string, string> = {
   "Sinema": "bg-purple-500/20 text-purple-400 border-purple-500/30",
@@ -16,6 +17,11 @@ export default function Blog() {
 
   return (
     <div className="pt-32 pb-20 bg-black min-h-screen text-white">
+      <SEO
+        title="Blog | Ebru Erten — Sinema, Yapımcılık & Sektör Yazıları"
+        description="Film yapımcısı ve senarist Ebru Erten'in sinema dünyası, yapım süreçleri, Türk sinemasının geleceği ve sektörel gelişmeler hakkında blog yazıları."
+        canonical="https://ebruerten.com/blog"
+      />
       <div className="container mx-auto px-6">
         <motion.div
            initial={{ opacity: 0, y: 20 }}

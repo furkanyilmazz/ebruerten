@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Calendar, User, Clock, ArrowLeft, ChevronRight } from 'lucide-react'
 import { blogPosts } from '../data/blogPosts'
 import ReactMarkdown from 'react-markdown'
+import SEO from '../components/SEO'
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>()
@@ -11,6 +12,7 @@ export default function BlogPost() {
   if (!post) {
     return (
       <div className="pt-32 pb-20 bg-black min-h-screen text-white">
+        <SEO title="Yazı Bulunamadı | Ebru Erten" description="Aradığınız blog yazısı bulunamadı." />
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl font-serif mb-6">Yazı Bulunamadı</h1>
           <p className="text-gray-400 mb-8">Aradığınız blog yazısı mevcut değil.</p>
@@ -29,6 +31,35 @@ export default function BlogPost() {
 
   return (
     <div className="pt-32 pb-20 bg-black min-h-screen text-white">
+      <SEO
+        title={`${post.title} | Ebru Erten Blog`}
+        description={post.excerpt}
+        canonical={`https://ebruerten.com/blog/${post.slug}`}
+        ogType="article"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": post.title,
+          "description": post.excerpt,
+          "image": post.image,
+          "datePublished": post.date,
+          "author": {
+            "@type": "Person",
+            "name": "Ebru Erten",
+            "url": "https://ebruerten.com",
+            "jobTitle": "Film Yapımcısı & Senarist"
+          },
+          "publisher": {
+            "@type": "Person",
+            "name": "Ebru Erten",
+            "url": "https://ebruerten.com"
+          },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://ebruerten.com/blog/${post.slug}`
+          }
+        }}
+      />
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

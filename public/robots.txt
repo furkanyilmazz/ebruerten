@@ -1,0 +1,6 @@
+# ebruerten.com - Ebru Erten Resmi Web Sitesi
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ebruerten.com/sitemap.xml

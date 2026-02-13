@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Play } from 'lucide-react'
+import SEO from '../components/SEO'
 
 interface Project {
   id: number
@@ -104,6 +105,11 @@ const projects: Project[] = [
 export default function Portfolio() {
   return (
     <div className="pt-32 pb-20 bg-black min-h-screen text-white">
+      <SEO
+        title="Projeler & Filmografi | Ebru Erten — Film Yapımcısı"
+        description="Ebru Erten'in filmografi ve seçilmiş projeleri: Burçlar, Recep İvedik, Ali Kundilli, Çılgın Dersane, Fatih dizisi, Romantik Komedi ve daha fazlası. En iyi Türk film yapımcısının tüm yapımları."
+        canonical="https://ebruerten.com/portfolio"
+      />
       <div className="container mx-auto px-6">
         <motion.div
            initial={{ opacity: 0, y: 20 }}
