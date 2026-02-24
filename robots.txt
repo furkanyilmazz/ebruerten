@@ -1,0 +1,31 @@
+# ebruerten.com - Ebru Erten Resmi Web Sitesi
+# Film Yapımcısı & Senarist | Aksoy Film, Dragon Film, DuvaFilm
+
+User-agent: *
+Allow: /
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# AI Crawlers - Gemini, ChatGPT, Bing AI
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Sitemap
+Sitemap: https://ebruerten.com/sitemap.xml
