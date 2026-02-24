@@ -297,5 +297,51 @@ Türk komedisi evrim geçiriyor. Artık sadece "güldürü" değil, "gülümseme
 
 > *"İyi bir komedi, insanları güldürür. Harika bir komedi, güldürürken düşündürür."*
     `
+  },
+  {
+    id: 7,
+    slug: "fetih-1453-kamera-arkasi",
+    title: "Fetih 1453: Kamera Arkası",
+    excerpt: "Türk sinema tarihinin en büyük prodüksiyonlarından Fetih 1453'ün kamera arkasında neler yaşandı? Devasa setler, yüzlerce figüran ve unutulmaz anlar.",
+    date: "25 Şubat 2026",
+    author: "Ebru Erten",
+    readTime: "10 dk",
+    category: "Yapım Günlüğü",
+    image: "/src/assets/projects/fetih1453/fetihkapak.png",
+    content: `
+## Tarihin En Büyük Prodüksiyonu
+
+Fetih 1453, Türk sinema tarihinin en büyük ve en iddialı projelerinden biriydi. İstanbul'un fethini beyazperdeye taşımak, hem sanatsal hem de teknik açıdan devasa bir meydan okumaydı. Aksoy Film yapımıyla hayata geçirilen bu proje, Türk sinemasının uluslararası arenada ne kadar büyük işler başarabileceğini kanıtladı.
+
+### Kamera Arkası Görüntüleri
+
+Filmin kamera arkası sürecini aşağıdaki videodan izleyebilirsiniz:
+
+📺 [Fetih 1453 - Kamera Arkası (YouTube)](https://youtu.be/sIKb1vrykns?si=pCeaGDoDwL9d1cYM)
+
+### Devasa Set Tasarımı
+
+İstanbul'un 1453'teki halini yeniden yaratmak için kurulan setler, Türk sinema tarihinin en büyük fiziksel yapılarıydı. Konstantinopolis surları, Osmanlı karargahı ve İstanbul Boğazı'ndaki deniz sahneleri için ayrı ayrı devasa setler inşa edildi.
+
+- **Surlar:** Gerçek boyutlarına yakın sur duvarları inşa edildi
+- **Gemiler:** Osmanlı ve Bizans donanmaları için tam ölçekli gemi replikalon üretildi
+- **Karargah:** Fatih Sultan Mehmet'in otağı ve ordugah alanı detaylı bir şekilde tasarlandı
+
+### Savaş Koreografisi
+
+Filmdeki savaş sahneleri, aylarca süren hazırlıkların ürünüydü. Yüzlerce figüran, profesyonel dövüş koreograflarının yönetiminde eğitildi. Her savaş sahnesi, askeri danışmanlar eşliğinde tarihi kaynaklara uygun olarak planlandı.
+
+Kılıç dövüşleri, ok atışları ve kuşatma sahneleri — her biri ayrı ayrı koreograflandı ve defalarca prova edildi. Güvenlik her zaman ön planda tutuldu; her figüran özel koruyucu ekipman kullandı.
+
+### Görsel Efektler
+
+Filmin yaklaşık 2.000 görsel efekt çekimi bulunuyordu. Fiziksel setler ile dijital efektlerin birleşimi, İstanbul'un fethini inanılmaz bir gerçeklikle canlandırdı. Top atışları, yıkılan surlar ve deniz muharebesi sahneleri, dönemin en gelişmiş VFX teknolojileriyle oluşturuldu.
+
+### Tarihi Araştırma
+
+Filmin senaryosu ve görsel tasarımı için kapsamlı bir tarihi araştırma yapıldı. Osmanlı ve Bizans tarihçileriyle istişare edildi, dönemin silahları, kıyafetleri ve yaşam tarzı konusunda uzman görüşleri alındı.
+
+> *"Fetih 1453, sadece bir film değil; bir milletin en önemli anlarından birini gelecek nesillere aktaran bir tarihi belgedir."*
+    `
   }
 ]

@@ -55,9 +55,18 @@ export default function Header() {
         </nav>
 
         {/* Socials & Mobile Toggle */}
-        <div className="flex items-center space-x-4">
-          <a href="https://instagram.com/ebruertenld" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-amber-400 transition-colors">
-            <Instagram size={20} />
+        <div className="flex items-center space-x-3">
+          <a href="https://instagram.com/ebruertenld" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-amber-400 transition-colors relative group/ig" title="@ebruertenld">
+            <Instagram size={18} />
+            <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-zinc-900 text-xs text-gray-300 px-2 py-1 rounded opacity-0 group-hover/ig:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-zinc-700">@ebruertenld</span>
+          </a>
+          <a href="https://instagram.com/duvafilm" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-amber-400 transition-colors relative group/df" title="@duvafilm">
+            <Instagram size={18} />
+            <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-zinc-900 text-xs text-gray-300 px-2 py-1 rounded opacity-0 group-hover/df:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-zinc-700">@duvafilm</span>
+          </a>
+          <a href="https://instagram.com/dragonfilmproduksiyon" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-amber-400 transition-colors relative group/dp" title="@dragonfilmproduksiyon">
+            <Instagram size={18} />
+            <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-zinc-900 text-xs text-gray-300 px-2 py-1 rounded opacity-0 group-hover/dp:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-zinc-700">@dragonfilmproduksiyon</span>
           </a>
           <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}

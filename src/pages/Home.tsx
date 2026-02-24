@@ -36,9 +36,12 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="text-amber-500 text-sm md:text-base font-medium tracking-[0.4em] mb-6 uppercase">
+            <h2 className="text-amber-500 text-sm md:text-base font-medium tracking-[0.4em] mb-2 uppercase">
               Yapımcı & Senarist
             </h2>
+            <p className="text-gray-500 text-xs md:text-sm tracking-[0.3em] mb-6 uppercase">
+              Producer · Yaratıcı Danışman · Marka İşbirliği · Proje Yönetimi
+            </p>
           </motion.div>
 
           <motion.h1 
@@ -96,12 +99,29 @@ export default function Home() {
                 Biyografiyi Oku <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={16} />
               </Link>
             </div>
-            <div className="relative aspect-video bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
-               {/* Placeholder for Showreel or Image */}
-               <div className="absolute inset-0 flex items-center justify-center text-gray-600">
-                 [Showreel / Featured Image Placeholder]
+            <a
+               href="https://youtu.be/eW3-6eKoH-M?si=LmAV9o9p4Zrpz99X"
+               target="_blank"
+               rel="noopener noreferrer" 
+               className="relative aspect-[2/3] md:aspect-auto md:h-[500px] bg-gray-900 rounded-lg overflow-hidden border border-gray-800 block group cursor-pointer"
+            >
+               <img 
+                 src="/burclar-poster.jpg" 
+                 alt="Burçlar Filmi" 
+                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+               />
+               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
+                 <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:bg-amber-500/80 transition-colors duration-300">
+                   <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                     <path d="M8 5v14l11-7z" />
+                   </svg>
+                 </div>
                </div>
-            </div>
+               <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                 <p className="text-white font-serif text-lg">Burçlar</p>
+                 <p className="text-gray-300 text-xs">Fragmanı İzle →</p>
+               </div>
+            </a>
           </div>
         </div>
       </section>

@@ -9,96 +9,171 @@ interface Project {
   year: string
   image: string
   type: string
+  link?: string
 }
 
 const projects: Project[] = [
   {
     id: 1,
+    title: "Fetih 1453",
+    role: "Yapımcı",
+    year: "2012",
+    type: "Sinema Filmi",
+    image: "/src/assets/projects/fetih1453/fetihkapak.png",
+    link: "https://www.youtube.com/watch?v=61GX58raU4s"
+  },
+  {
+    id: 2,
     title: "Burçlar",
     role: "Yapımcı & Senarist",
     year: "2022",
     type: "Sinema Filmi",
-    image: "/posters/burclar.png"
-  },
-  {
-    id: 2,
-    title: "Allah'ın Kılıcı: Halid Bin Velid",
-    role: "Yapımcı",
-    year: "2023",
-    type: "Tarihi Drama",
-    image: "/posters/halid_bin_velid.png"
+    image: "/src/assets/projects/burclar/burclarkapak.png",
+    link: "https://www.youtube.com/watch?v=THRdleBJBUs"
   },
   {
     id: 3,
+    title: "Erkekler",
+    role: "Yapımcı",
+    year: "2019",
+    type: "Sinema Filmi",
+    image: "/src/assets/projects/erkekler/erkekler.png",
+    link: "https://www.youtube.com/watch?v=v-XY_VphwWw"
+  },
+  {
+    id: 4,
     title: "Büyü 2",
     role: "Yapımcı",
     year: "2017",
     type: "Sinema Filmi",
-    image: "/posters/buyu2.png"
-  },
-  {
-    id: 4,
-    title: "Ali Kundilli 1 & 2",
-    role: "Yapımcı",
-    year: "2015",
-    type: "Sinema Filmi",
-    image: "/posters/ali_kundilli.png"
+    image: "/src/assets/projects/büyü 2/büyü2.png",
+    link: "https://www.youtube.com/watch?v=Rs1EeHyalw4"
   },
   {
     id: 5,
-    title: "Çılgın Dersane 3 & Kampta",
+    title: "Ali Kundilli",
     role: "Yapımcı",
-    year: "2014 - 2008",
+    year: "2015",
     type: "Sinema Filmi",
-    image: "/posters/cilgin_dersane.png"
+    image: "/src/assets/projects/ali kundilli/alikundilli.png",
+    link: "https://www.youtube.com/watch?v=gMOBzZejZjk"
   },
   {
     id: 6,
+    title: "Dedemin İnsanları",
+    role: "Yapımcı",
+    year: "2011",
+    type: "Sinema Filmi",
+    image: "/src/assets/projects/dedemin insanları/dedemininsanları.png",
+    link: "https://www.youtube.com/watch?v=vUrT9XEmwNk"
+  },
+  {
+    id: 7,
+    title: "Çılgın Dersane 3",
+    role: "Yapımcı",
+    year: "2014",
+    type: "Sinema Filmi",
+    image: "/src/assets/projects/çılgın dersane 3/çılgındersane3.png",
+    link: "https://www.youtube.com/watch?v=miZ5pJ27kBo"
+  },
+  {
+    id: 8,
+    title: "Çılgın Dersane Kampta",
+    role: "Yapımcı",
+    year: "2008",
+    type: "Sinema Filmi",
+    image: "/src/assets/projects/çılgın dersane 2/çılgındersane2.png",
+    link: "https://www.youtube.com/watch?v=yNbpC6DBksk"
+  },
+  {
+    id: 9,
     title: "Çılgın Dersane Üniversitede",
     role: "Yapımcı",
     year: "2014",
     type: "TV Dizisi",
-    image: "/posters/cilgin_uni.png"
+    image: "/src/assets/projects/Çılgın dersane üniversitede/çılgındersaneuni.webloc.png",
+    link: "https://www.youtube.com/watch?v=1UQCA5omSVQ"
   },
   {
-    id: 7,
+    id: 10,
     title: "Fatih",
     role: "Yapımcı",
     year: "2013",
     type: "TV Dizisi (Kanal D)",
-    image: "/posters/fatih.png"
+    image: "/src/assets/projects/fatih dizisi/fatih.png",
+    link: "https://www.youtube.com/watch?v=rUJhV9acQt8"
   },
   {
-    id: 8,
+    id: 11,
     title: "Recep İvedik",
     role: "Yapımcı",
     year: "2008",
     type: "Sinema Filmi",
-    image: "/posters/recep_ivedik_1.png"
+    image: "/src/assets/projects/recep ivedik 1/recep1.png",
+    link: "https://www.youtube.com/watch?v=ite5gbn55TQ"
   },
   {
-    id: 9,
+    id: 12,
     title: "Recep İvedik 2",
     role: "Yapımcı",
     year: "2009",
     type: "Sinema Filmi",
-    image: "/posters/recep_ivedik_2.png"
+    image: "/src/assets/projects/recep ivedik 2/recep2.png",
+    link: "https://www.youtube.com/watch?v=jUkm-Qz3wjc"
   },
   {
-    id: 10,
+    id: 13,
     title: "Recep İvedik 3",
     role: "Yapımcı",
     year: "2010",
     type: "Sinema Filmi",
-    image: "/posters/recep_ivedik_3.png"
+    image: "/src/assets/projects/recep ivedik 3/recep3.png",
+    link: "https://www.youtube.com/watch?v=wU7yHUYWqS8"
   },
   {
-    id: 11,
+    id: 14,
     title: "Romantik Komedi",
     role: "Yapımcı",
     year: "2010",
     type: "Sinema Filmi",
-    image: "/posters/romantik_komedi.png"
+    image: "/src/assets/projects/romantik komedi /romantikkomedi.png",
+    link: "https://www.youtube.com/watch?v=gAyUUWQPvXI"
+  },
+  {
+    id: 15,
+    title: "Beyaz Melek",
+    role: "Yapımcı",
+    year: "2007",
+    type: "Sinema Filmi",
+    image: "/src/assets/projects/beyaz melek/beyazmelek.png",
+    link: "https://www.youtube.com/watch?v=Nf7CpKB530U"
+  },
+  {
+    id: 16,
+    title: "Binbir Gece",
+    role: "Yapımcı",
+    year: "2006",
+    type: "TV Dizisi",
+    image: "/src/assets/projects/binbir gece/binbirgece.png",
+    link: "https://www.youtube.com/watch?v=EnWZ1g12oGI"
+  },
+  {
+    id: 17,
+    title: "Çalıkuşu",
+    role: "Yapımcı",
+    year: "2013",
+    type: "TV Dizisi",
+    image: "/src/assets/projects/çalıkuşu dizisi/çalıkuşu.png",
+    link: "https://www.youtube.com/watch?v=q81xtqWpasQ"
+  },
+  {
+    id: 18,
+    title: "Hanımın Çiftliği",
+    role: "Yapımcı",
+    year: "2009",
+    type: "TV Dizisi",
+    image: "/src/assets/projects/hanımın çiftliği/hanımınciftligi.webloc.png",
+    link: "https://www.youtube.com/watch?v=QZzqkUuzqjc"
   }
 ]
 
@@ -121,7 +196,10 @@ export default function Portfolio() {
           </h1>
           
           <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
-            {projects.map((project, index) => (
+            {projects.map((project, index) => {
+              const Wrapper = project.link ? 'a' : 'div'
+              const wrapperProps = project.link ? { href: project.link, target: '_blank', rel: 'noopener noreferrer' } : {}
+              return (
               <motion.div
                 key={project.id}
                 initial={{ opacity: 0, y: 20 }}
@@ -129,6 +207,7 @@ export default function Portfolio() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="break-inside-avoid group relative cursor-pointer"
               >
+                <Wrapper {...wrapperProps}>
                 <div className="overflow-hidden rounded-lg bg-gray-900 border border-gray-800">
                   <div className="w-full relative">
                     <img 
@@ -156,8 +235,9 @@ export default function Portfolio() {
                   </h3>
                   <p className="text-gray-500 text-sm mt-1">{project.role}</p>
                 </div>
+                </Wrapper>
               </motion.div>
-            ))}
+            )})}
           </div>
         </motion.div>
       </div>

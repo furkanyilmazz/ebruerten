@@ -23,6 +23,15 @@ const pressItems = [
   },
   {
     id: 3,
+    title: "'Allah'ın Kılıcı' Filmi Türkiye'de Çekilecek",
+    source: "Sabah",
+    date: "2019",
+    description: "İslam tarihinin en büyük savaşçısı olan Hz. Halid Bin Velid'in hayatını anlatan 'Allah'ın Kılıcı Halid Bin Velid' adlı filmin tamamı Türkiye topraklarında çekilecek.",
+    link: "https://m.sabah.com.tr/magazin/allahin-kilici-filmi-turkiyede-cekilecek-4734097",
+    category: "Film Haberi"
+  },
+  {
+    id: 4,
     title: "Burçlar Filmi — Kadro, Konu ve Detaylar",
     source: "HaberTürk",
     date: "2022",
@@ -31,7 +40,7 @@ const pressItems = [
     category: "Film Haberi"
   },
   {
-    id: 4,
+    id: 5,
     title: "Burçlar Filmi — Film Bilgileri",
     source: "Beyazperde",
     date: "16 Eylül 2022",
@@ -127,6 +136,78 @@ const pressItems = [
     date: "Güncel",
     description: "Recep İvedik, Ali Kundilli, Çılgın Dersane gibi gişe rekorları kıran filmlerin yapım şirketi.",
     link: "https://aksoyfilm.com.tr",
+    category: "Kurumsal"
+  },
+  {
+    id: 15,
+    title: "Fetih 1453 — Film Bilgileri ve Kadro",
+    source: "Beyazperde",
+    date: "17 Şubat 2012",
+    description: "Aksoy Film yapımıyla çekilen, İstanbul'un fethini anlatan destansı aksiyon filmi Fetih 1453'ün detaylı bilgileri ve yapımcı kadrosu.",
+    link: "https://www.beyazperde.com/filmler/film-197461/",
+    category: "Film Haberi"
+  },
+  {
+    id: 16,
+    title: "Fetih 1453 — Box Office Verileri",
+    source: "Box Office Türkiye",
+    date: "2012",
+    description: "Türk sinema tarihinin en yüksek bütçeli ve en çok izlenen filmlerinden Fetih 1453'ün gişe rakamları.",
+    link: "https://boxofficeturkiye.com/film/fetih-1453-201257",
+    category: "Gişe"
+  },
+  {
+    id: 17,
+    title: "Erkekler — Film Bilgileri",
+    source: "Beyazperde",
+    date: "2019",
+    description: "Ebru Erten'in yapımcılığını üstlendiği 'Erkekler' filminin detaylı bilgileri ve kadrosu.",
+    link: "https://www.beyazperde.com/filmler/film-277379/",
+    category: "Film Haberi"
+  },
+  {
+    id: 18,
+    title: "Çılgın Dersane Kampta — Film Bilgileri",
+    source: "Beyazperde",
+    date: "2008",
+    description: "Aksoy Film yapımı, serinin ikinci filmi 'Çılgın Dersane Kampta'nın detayları ve kadrosu.",
+    link: "https://www.beyazperde.com/filmler/film-143432/",
+    category: "Film Haberi"
+  },
+  {
+    id: 19,
+    title: "Recep İvedik 2 — Box Office Verileri",
+    source: "Box Office Türkiye",
+    date: "2009",
+    description: "Recep İvedik serisinin ikinci filminin gişe rakamları ve seyirci sayıları.",
+    link: "https://boxofficeturkiye.com/film/recep-ivedik-2-200957",
+    category: "Gişe"
+  },
+  {
+    id: 20,
+    title: "Recep İvedik 3 — Box Office Verileri",
+    source: "Box Office Türkiye",
+    date: "2010",
+    description: "Recep İvedik serisinin üçüncü filminin gişe rakamları ve rekorları.",
+    link: "https://boxofficeturkiye.com/film/recep-ivedik-3-201060",
+    category: "Gişe"
+  },
+  {
+    id: 21,
+    title: "Dedemin İnsanları — Film Bilgileri",
+    source: "Beyazperde",
+    date: "2011",
+    description: "Çağan Irmak'ın büyük beğeni toplayan filmi 'Dedemin İnsanları'nın detayları ve yapım bilgileri.",
+    link: "https://www.beyazperde.com/filmler/film-193987/",
+    category: "Film Haberi"
+  },
+  {
+    id: 22,
+    title: "Aksoy Film Production — Vikipedi",
+    source: "Vikipedi",
+    date: "Güncel",
+    description: "Faruk Aksoy tarafından kurulan, Recep İvedik, Fetih 1453, Çılgın Dersane gibi gişe rekorları kıran yapımları üreten Aksoy Film Production hakkında detaylı bilgi.",
+    link: "https://tr.wikipedia.org/wiki/Aksoy_Film_Production",
     category: "Kurumsal"
   }
 ]

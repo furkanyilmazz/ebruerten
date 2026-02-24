@@ -111,9 +111,23 @@ export default function Contact() {
                     href="https://www.instagram.com/duvafilm" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-zinc-900 p-3 rounded-full text-gray-400 hover:bg-amber-500 hover:text-black transition-colors"
+                    className="flex flex-col items-center gap-1.5 group"
                   >
-                    <Instagram size={20} />
+                    <div className="bg-zinc-900 p-3 rounded-full text-gray-400 group-hover:bg-amber-500 group-hover:text-black transition-colors">
+                      <Instagram size={20} />
+                    </div>
+                    <span className="text-xs text-gray-500 group-hover:text-amber-400 transition-colors">@duvafilm</span>
+                  </a>
+                  <a 
+                    href="https://www.instagram.com/dragonfilmproduksiyon" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex flex-col items-center gap-1.5 group"
+                  >
+                    <div className="bg-zinc-900 p-3 rounded-full text-gray-400 group-hover:bg-amber-500 group-hover:text-black transition-colors">
+                      <Instagram size={20} />
+                    </div>
+                    <span className="text-xs text-gray-500 group-hover:text-amber-400 transition-colors">@dragonfilmproduksiyon</span>
                   </a>
                 </div>
               </div>
