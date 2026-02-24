@@ -11,6 +11,14 @@ export interface BlogPost {
   content: string
 }
 
+// Eagerly import project images for blog post thumbnails
+const projectModules = import.meta.glob('../assets/projects/**/*.png', { eager: true, import: 'default' }) as Record<string, string>
+
+function getProjectSrc(path: string): string {
+  const key = `../assets/projects/${path}`
+  return projectModules[key] || ''
+}
+
 export const blogPosts: BlogPost[] = [
   {
     id: 1,
@@ -307,7 +315,7 @@ Türk komedisi evrim geçiriyor. Artık sadece "güldürü" değil, "gülümseme
     author: "Ebru Erten",
     readTime: "10 dk",
     category: "Yapım Günlüğü",
-    image: "/src/assets/projects/fetih1453/fetihkapak.png",
+    image: getProjectSrc("fetih1453/fetihkapak.png"),
     content: `
 ## Tarihin En Büyük Prodüksiyonu
 

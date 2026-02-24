@@ -2,6 +2,15 @@ import { motion } from 'framer-motion'
 import { Play } from 'lucide-react'
 import SEO from '../components/SEO'
 
+// Eagerly import all project poster images so Vite bundles them for production
+const projectModules = import.meta.glob('../assets/projects/**/*.png', { eager: true, import: 'default' }) as Record<string, string>
+
+function getProjectSrc(path: string): string {
+  // path should be like "fetih1453/fetihkapak.png"
+  const key = `../assets/projects/${path}`
+  return projectModules[key] || ''
+}
+
 interface Project {
   id: number
   title: string
@@ -19,7 +28,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2012",
     type: "Sinema Filmi",
-    image: "/src/assets/projects/fetih1453/fetihkapak.png",
+    image: getProjectSrc("fetih1453/fetihkapak.png"),
     link: "https://www.youtube.com/watch?v=61GX58raU4s"
   },
   {
@@ -28,7 +37,7 @@ const projects: Project[] = [
     role: "Yapımcı & Senarist",
     year: "2022",
     type: "Sinema Filmi",
-    image: "/src/assets/projects/burclar/burclarkapak.png",
+    image: getProjectSrc("burclar/burclarkapak.png"),
     link: "https://www.youtube.com/watch?v=THRdleBJBUs"
   },
   {
@@ -37,7 +46,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2019",
     type: "Sinema Filmi",
-    image: "/src/assets/projects/erkekler/erkekler.png",
+    image: getProjectSrc("erkekler/erkekler.png"),
     link: "https://www.youtube.com/watch?v=v-XY_VphwWw"
   },
   {
@@ -46,7 +55,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2017",
     type: "Sinema Filmi",
-    image: "/src/assets/projects/büyü 2/büyü2.png",
+    image: getProjectSrc("büyü 2/büyü2.png"),
     link: "https://www.youtube.com/watch?v=Rs1EeHyalw4"
   },
   {
@@ -55,7 +64,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2015",
     type: "Sinema Filmi",
-    image: "/src/assets/projects/ali kundilli/alikundilli.png",
+    image: getProjectSrc("ali kundilli/alikundilli.png"),
     link: "https://www.youtube.com/watch?v=gMOBzZejZjk"
   },
   {
@@ -64,7 +73,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2011",
     type: "Sinema Filmi",
-    image: "/src/assets/projects/dedemin insanları/dedemininsanları.png",
+    image: getProjectSrc("dedemin insanları/dedemininsanları.png"),
     link: "https://www.youtube.com/watch?v=vUrT9XEmwNk"
   },
   {
@@ -73,7 +82,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2014",
     type: "Sinema Filmi",
-    image: "/src/assets/projects/çılgın dersane 3/çılgındersane3.png",
+    image: getProjectSrc("çılgın dersane 3/çılgındersane3.png"),
     link: "https://www.youtube.com/watch?v=miZ5pJ27kBo"
   },
   {
@@ -82,7 +91,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2008",
     type: "Sinema Filmi",
-    image: "/src/assets/projects/çılgın dersane 2/çılgındersane2.png",
+    image: getProjectSrc("çılgın dersane 2/çılgındersane2.png"),
     link: "https://www.youtube.com/watch?v=yNbpC6DBksk"
   },
   {
@@ -91,7 +100,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2014",
     type: "TV Dizisi",
-    image: "/src/assets/projects/Çılgın dersane üniversitede/çılgındersaneuni.webloc.png",
+    image: getProjectSrc("Çılgın dersane üniversitede/çılgındersaneuni.webloc.png"),
     link: "https://www.youtube.com/watch?v=1UQCA5omSVQ"
   },
   {
@@ -100,7 +109,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2013",
     type: "TV Dizisi (Kanal D)",
-    image: "/src/assets/projects/fatih dizisi/fatih.png",
+    image: getProjectSrc("fatih dizisi/fatih.png"),
     link: "https://www.youtube.com/watch?v=rUJhV9acQt8"
   },
   {
@@ -109,7 +118,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2008",
     type: "Sinema Filmi",
-    image: "/src/assets/projects/recep ivedik 1/recep1.png",
+    image: getProjectSrc("recep ivedik 1/recep1.png"),
     link: "https://www.youtube.com/watch?v=ite5gbn55TQ"
   },
   {
@@ -118,7 +127,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2009",
     type: "Sinema Filmi",
-    image: "/src/assets/projects/recep ivedik 2/recep2.png",
+    image: getProjectSrc("recep ivedik 2/recep2.png"),
     link: "https://www.youtube.com/watch?v=jUkm-Qz3wjc"
   },
   {
@@ -127,7 +136,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2010",
     type: "Sinema Filmi",
-    image: "/src/assets/projects/recep ivedik 3/recep3.png",
+    image: getProjectSrc("recep ivedik 3/recep3.png"),
     link: "https://www.youtube.com/watch?v=wU7yHUYWqS8"
   },
   {
@@ -136,7 +145,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2010",
     type: "Sinema Filmi",
-    image: "/src/assets/projects/romantik komedi /romantikkomedi.png",
+    image: getProjectSrc("romantik komedi /romantikkomedi.png"),
     link: "https://www.youtube.com/watch?v=gAyUUWQPvXI"
   },
   {
@@ -145,7 +154,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2007",
     type: "Sinema Filmi",
-    image: "/src/assets/projects/beyaz melek/beyazmelek.png",
+    image: getProjectSrc("beyaz melek/beyazmelek.png"),
     link: "https://www.youtube.com/watch?v=Nf7CpKB530U"
   },
   {
@@ -154,7 +163,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2006",
     type: "TV Dizisi",
-    image: "/src/assets/projects/binbir gece/binbirgece.png",
+    image: getProjectSrc("binbir gece/binbirgece.png"),
     link: "https://www.youtube.com/watch?v=EnWZ1g12oGI"
   },
   {
@@ -163,7 +172,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2013",
     type: "TV Dizisi",
-    image: "/src/assets/projects/çalıkuşu dizisi/çalıkuşu.png",
+    image: getProjectSrc("çalıkuşu dizisi/çalıkuşu.png"),
     link: "https://www.youtube.com/watch?v=q81xtqWpasQ"
   },
   {
@@ -172,7 +181,7 @@ const projects: Project[] = [
     role: "Yapımcı",
     year: "2009",
     type: "TV Dizisi",
-    image: "/src/assets/projects/hanımın çiftliği/hanımınciftligi.webloc.png",
+    image: getProjectSrc("hanımın çiftliği/hanımınciftligi.webloc.png"),
     link: "https://www.youtube.com/watch?v=QZzqkUuzqjc"
   }
 ]
