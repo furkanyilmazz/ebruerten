@@ -63,7 +63,18 @@ export default function About() {
               </p>
 
 
-              {/* Dragon Film & DuvaFilm Sections */}
+             
+
+            
+
+              <p>
+                Son olarak, <strong className="text-amber-500">Dragon Film</strong> bünyesinde 2022 yapımı "Burçlar" filminin hem yapımcılığını hem de senaristliğini üstlenmiş ve tarihi drama "Allah'ın Kılıcı: Halid Bin Velid" üzerinde çalışmalarını sürdürmektedir.
+              </p>
+              <p>
+                Profesyonel başarılarının ötesinde, kızı Dilayla Erten de dahil olmak üzere yeni nesil sinemacılar için bir mentor ve ilham kaynağıdır. Sınırları zorlamaya ve sinemada yeni ufuklar keşfetmeye devam etmektedir.
+              </p>
+
+ {/* Dragon Film & DuvaFilm Sections */}
               <div className="space-y-8 my-10">
                 {/* Dragon Film Card */}
                 <motion.div
@@ -151,16 +162,6 @@ export default function About() {
                   </div>
                 </motion.div>
               </div>
-
-            
-
-              <p>
-                Son olarak, <strong className="text-amber-500">Dragon Film</strong> bünyesinde 2022 yapımı "Burçlar" filminin hem yapımcılığını hem de senaristliğini üstlenmiş ve tarihi drama "Allah'ın Kılıcı: Halid Bin Velid" üzerinde çalışmalarını sürdürmektedir.
-              </p>
-              <p>
-                Profesyonel başarılarının ötesinde, kızı Dilayla Erten de dahil olmak üzere yeni nesil sinemacılar için bir mentor ve ilham kaynağıdır. Sınırları zorlamaya ve sinemada yeni ufuklar keşfetmeye devam etmektedir.
-              </p>
-
 
                 {/* Referanslar Section */}
               <motion.div
