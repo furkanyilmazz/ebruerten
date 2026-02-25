@@ -59,7 +59,7 @@ export default function About() {
                 Bir yapımcı olarak, çeşitli sinematik eserlerin gerçekleştirilmesinde önemli rol oynamıştır. <strong className="text-amber-500">Aksoy Film</strong> ve <strong className="text-amber-500">Sea Film</strong> gibi büyük yapım şirketleriyle işbirliği yaparak Türk sinemasının en tanınmış projelerine katkıda bulunmuştur.
               </p>
               <p>
-                Geniş portföyü, sevilen komedi serisi <em>"Ali Kundilli"</em>, popüler franchise <em>"Çılgın Dersane"</em> ve Türk sinema tarihinin en çok izlenen serilerinden <em>"Recep İvedik"</em> gibi gişe rekorları kıran yapımları içermektedir. Ayrıca <strong className="text-amber-500">Kanal D</strong> için iddialı tarihi dizi <em>"Fatih"</em>in yapımcılığını üstlenerek karmaşık, büyük ölçekli prodüksiyonları yönetme yeteneğini göstermiştir.
+                Geniş portföyü, <em>"Fetih 1453"</em> başta olmak üzere, sevilen komedi serisi <em>"Ali Kundilli"</em>, popüler franchise <em>"Çılgın Dersane"</em>, Türk sinema tarihinin en çok izlenen serilerinden <em>"Recep İvedik"</em> ve kendi yapımı olan <em>"Burçlar"</em> gibi gişe rekorları kıran yapımları içermektedir. Ayrıca <strong className="text-amber-500">Kanal D</strong> için iddialı tarihi dizi <em>"Fatih"</em>in yapımcılığını üstlenerek karmaşık, büyük ölçekli prodüksiyonları yönetme yeteneğini göstermiştir.
               </p>
 
 
