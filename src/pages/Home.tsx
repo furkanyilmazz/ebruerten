@@ -40,7 +40,7 @@ export default function Home() {
               Yapımcı & Senarist
             </h2>
             <p className="text-gray-500 text-xs md:text-sm tracking-[0.3em] mb-6 uppercase">
-              Producer · Yaratıcı Danışman · Marka İşbirliği · Proje Yönetimi
+              Kreatif Direktör · Marka Danışmanı · Marka ve Proje Yönetimi  
             </p>
           </motion.div>
 
