@@ -5,9 +5,9 @@ import emailjs from '@emailjs/browser'
 import SEO from '../components/SEO'
 
 // EmailJS Configuration
-const EMAILJS_SERVICE_ID = 'service_dragonfilm'
-const EMAILJS_TEMPLATE_ID = 'template_contact'
-const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY'
+const EMAILJS_SERVICE_ID = 'service_441tb8h'
+const EMAILJS_TEMPLATE_ID = 'template_pcyil3w'
+const EMAILJS_PUBLIC_KEY = 'mgoVjT6urCD5Xjmdg'
 
 export default function Contact() {
   const [sent, setSent] = useState(false)
