@@ -53,27 +53,27 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-12">
             <div className="md:col-span-2 space-y-6 text-gray-300 text-lg leading-relaxed font-light">
               <p>
-                Ebru Erten, dünya çapında izleyicilerle yankı uyandıran ilgi çekici hikayeler yaratmaya adanmış vizyoner bir Film Yapımcısı ve Senaristtir. Detaylara olan keskin bakış açısı ve hikaye anlatımına olan tutkusuyla, sanatsal bütünlük ve ticari başarıyı dengeleyerek sayısız projeye hayat vermiştir.
+               Kariyeri boyunca 18 sinema filminin yapımcılığını üstlenen Ebru Erten, Türkiye sinemasına değer katan en önemli isimlerden biridir. Detaylara olan keskin bakış açısı ve hikaye anlatımına olan tutkusuyla, sanatsal bütünlük ve ticari başarıyı dengeleyerek sayısız projeye hayat vermiştir.
+             
               </p>
               <p>
-                Bir yapımcı olarak, çeşitli sinematik eserlerin gerçekleştirilmesinde önemli rol oynamıştır. <strong className="text-amber-500">Aksoy Film</strong> ve <strong className="text-amber-500">Sea Film</strong> gibi büyük yapım şirketleriyle işbirliği yaparak Türk sinemasının en tanınmış projelerine katkıda bulunmuştur.
+                Bir yapımcı olarak, çeşitli sinematik eserlerin gerçekleştirilmesinde önemli rol oynamıştır. 
               </p>
               <p>
                 Geniş portföyü, <em>"Fetih 1453"</em> başta olmak üzere, sevilen komedi serisi <em>"Ali Kundilli"</em>, popüler franchise <em>"Çılgın Dersane"</em>, Türk sinema tarihinin en çok izlenen serilerinden <em>"Recep İvedik"</em> ve kendi yapımı olan <em>"Burçlar"</em> gibi gişe rekorları kıran yapımları içermektedir. Ayrıca <strong className="text-amber-500">Kanal D</strong> için iddialı tarihi dizi <em>"Fatih"</em>in yapımcılığını üstlenerek karmaşık, büyük ölçekli prodüksiyonları yönetme yeteneğini göstermiştir.
               </p>
 
-
-             
-
-            
-
               <p>
                 Son olarak, <strong className="text-amber-500">Dragon Film</strong> bünyesinde 2022 yapımı "Burçlar" filminin hem yapımcılığını hem de senaristliğini üstlenmiş ve tarihi drama "Allah'ın Kılıcı: Halid Bin Velid" üzerinde çalışmalarını sürdürmektedir.
               </p>
-              <p>
+              {/* <p>
                 Profesyonel başarılarının ötesinde, kızı Dilayla Erten de dahil olmak üzere yeni nesil sinemacılar için bir mentor ve ilham kaynağıdır. Sınırları zorlamaya ve sinemada yeni ufuklar keşfetmeye devam etmektedir.
-              </p>
+              </p> */}
 
+                   <p>  
+                     2025 yılında yeni nesil dijital reklamcılık vizyonuyla ekibe katılmış; son bir yıl içerisinde Dragon Film ve Duva Film çatısı altında büyük markaların reklam ve sosyal medya süreçlerini yöneterek sektörde önemli başarılara imza atmıştır.  
+                    </p>
+                    
  {/* Dragon Film & DuvaFilm Sections */}
               <div className="space-y-8 my-10">
                 {/* Dragon Film Card */}

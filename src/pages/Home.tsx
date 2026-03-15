@@ -37,7 +37,7 @@ export default function Home() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <h2 className="text-amber-500 text-sm md:text-base font-medium tracking-[0.4em] mb-2 uppercase">
-              Yapımcı & Senarist
+              Film Yapımcısı & Reklamcı
             </h2>
             <p className="text-gray-500 text-xs md:text-sm tracking-[0.3em] mb-6 uppercase">
               Kreatif Direktör · Marka Danışmanı · Marka ve Proje Yönetimi  

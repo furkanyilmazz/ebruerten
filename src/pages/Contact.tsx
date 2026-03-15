@@ -1,10 +1,19 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, MapPin, Send, CheckCircle, Film, Instagram } from 'lucide-react'
+import { Mail, MapPin, Send, CheckCircle, Film, Instagram, AlertCircle, Loader2 } from 'lucide-react'
+import emailjs from '@emailjs/browser'
 import SEO from '../components/SEO'
+
+// EmailJS Configuration
+const EMAILJS_SERVICE_ID = 'service_dragonfilm'
+const EMAILJS_TEMPLATE_ID = 'template_contact'
+const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY'
 
 export default function Contact() {
   const [sent, setSent] = useState(false)
+  const [error, setError] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const formRef = useRef<HTMLFormElement>(null)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -16,20 +25,36 @@ export default function Contact() {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     
-    const { name, email, subject, message } = formData
+    const { name, email, message } = formData
     if (!name.trim() || !email.trim() || !message.trim()) return
 
-    const mailSubject = encodeURIComponent(subject || 'İletişim Formu')
-    const mailBody = encodeURIComponent(
-      `Ad Soyad: ${name}\nE-posta: ${email}\n\nMesaj:\n${message}`
-    )
+    setLoading(true)
+    setError(false)
 
-    window.location.href = `mailto:duvafilm@gmail.com?subject=${mailSubject}&body=${mailBody}`
-    setSent(true)
-    setFormData({ name: '', email: '', subject: '', message: '' })
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: name,
+          from_email: email,
+          subject: formData.subject || 'İletişim Formu',
+          message: message,
+          to_email: 'info@dragonfilm.com.tr',
+        },
+        EMAILJS_PUBLIC_KEY
+      )
+      
+      setSent(true)
+      setFormData({ name: '', email: '', subject: '', message: '' })
+    } catch {
+      setError(true)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -46,7 +71,7 @@ export default function Contact() {
           "mainEntity": {
             "@type": "Person",
             "name": "Ebru Erten",
-            "email": "duvafilm@gmail.com",
+            "email": "info@dragonfilm.com.tr",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "İstanbul",
@@ -72,13 +97,13 @@ export default function Contact() {
             {/* Contact Info */}
             <div className="md:col-span-2 space-y-8">
               <div className="space-y-6">
-                <a href="mailto:duvafilm@gmail.com" className="flex items-start gap-4 group">
+                <a href="mailto:info@dragonfilm.com.tr" className="flex items-start gap-4 group">
                   <div className="bg-zinc-900 p-3 rounded-full text-amber-500 group-hover:bg-amber-500 group-hover:text-black transition-colors shrink-0">
                     <Mail size={22} />
                   </div>
                   <div>
                     <h4 className="text-white font-medium mb-1 text-sm uppercase tracking-wider">E-posta</h4>
-                    <p className="text-gray-400 group-hover:text-amber-500 transition-colors">duvafilm@gmail.com</p>
+                    <p className="text-gray-400 group-hover:text-amber-500 transition-colors">info@dragonfilm.com.tr & ebru.erten@dragonfilm.com.tr</p>
                   </div>
                 </a>
                 
@@ -142,11 +167,12 @@ export default function Contact() {
             {/* Form */}
             <div className="md:col-span-3">
               <form 
+                ref={formRef}
                 onSubmit={handleSubmit} 
                 className="space-y-6 bg-zinc-900/50 p-8 md:p-10 rounded-xl border border-zinc-800"
               >
                 <h3 className="text-2xl font-serif text-white mb-2">Mesaj Gönderin</h3>
-                <p className="text-gray-500 text-sm mb-6">Formu doldurun, mesajınız e-posta uygulamanız aracılığıyla bize ulaşacaktır.</p>
+                <p className="text-gray-500 text-sm mb-6">Formu doldurun, mesajınız doğrudan bize ulaşacaktır.</p>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -160,7 +186,8 @@ export default function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full bg-black border border-zinc-700 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500/30 transition-all" 
+                      disabled={loading}
+                      className="w-full bg-black border border-zinc-700 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500/30 transition-all disabled:opacity-50" 
                       placeholder="Adınız Soyadınız" 
                     />
                   </div>
@@ -175,7 +202,8 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full bg-black border border-zinc-700 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500/30 transition-all" 
+                      disabled={loading}
+                      className="w-full bg-black border border-zinc-700 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500/30 transition-all disabled:opacity-50" 
                       placeholder="ornek@email.com" 
                     />
                   </div>
@@ -189,7 +217,8 @@ export default function Contact() {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full bg-black border border-zinc-700 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500/30 transition-all" 
+                    disabled={loading}
+                    className="w-full bg-black border border-zinc-700 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500/30 transition-all disabled:opacity-50" 
                     placeholder="Proje teklifi, iş birliği, soru..." 
                   />
                 </div>
@@ -204,8 +233,9 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     required
+                    disabled={loading}
                     rows={6} 
-                    className="w-full bg-black border border-zinc-700 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500/30 transition-all resize-none" 
+                    className="w-full bg-black border border-zinc-700 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500/30 transition-all resize-none disabled:opacity-50" 
                     placeholder="Projenizden veya iş birliği fikrinizden bahsedin..."
                   />
                 </div>
@@ -218,19 +248,36 @@ export default function Contact() {
                     className="flex items-center gap-3 bg-green-500/10 border border-green-500/30 text-green-400 px-5 py-4 rounded-lg"
                   >
                     <CheckCircle size={20} />
-                    <span className="text-sm">E-posta uygulamanız açıldı. Gönderdikten sonra en kısa sürede dönüş yapacağız.</span>
+                    <span className="text-sm">Mesajınız başarıyla gönderildi. En kısa sürede dönüş yapacağız.</span>
+                  </motion.div>
+                )}
+
+                {/* Error Message */}
+                {error && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="flex items-center gap-3 bg-red-500/10 border border-red-500/30 text-red-400 px-5 py-4 rounded-lg"
+                  >
+                    <AlertCircle size={20} />
+                    <span className="text-sm">Mesaj gönderilemedi. Lütfen doğrudan <a href="mailto:info@dragonfilm.com.tr" className="underline">info@dragonfilm.com.tr</a> adresine e-posta gönderin.</span>
                   </motion.div>
                 )}
 
                 <button 
                   type="submit" 
-                  className="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 rounded-lg transition-colors flex items-center justify-center uppercase tracking-widest text-sm"
+                  disabled={loading}
+                  className="w-full bg-amber-600 hover:bg-amber-700 disabled:bg-amber-800 disabled:cursor-not-allowed text-white font-bold py-4 rounded-lg transition-colors flex items-center justify-center uppercase tracking-widest text-sm"
                 >
-                  Mesajı Gönder <Send size={18} className="ml-2" />
+                  {loading ? (
+                    <>Gönderiliyor... <Loader2 size={18} className="ml-2 animate-spin" /></>
+                  ) : (
+                    <>Mesajı Gönder <Send size={18} className="ml-2" /></>
+                  )}
                 </button>
 
                 <p className="text-gray-600 text-xs text-center">
-                  Veya doğrudan <a href="mailto:duvafilm@gmail.com" className="text-amber-500 hover:underline">duvafilm@gmail.com</a> adresine e-posta gönderin.
+                  Veya doğrudan <a href="mailto:info@dragonfilm.com.tr" className="text-amber-500 hover:underline">info@dragonfilm.com.tr</a> adresine e-posta gönderin.
                 </p>
               </form>
             </div>
