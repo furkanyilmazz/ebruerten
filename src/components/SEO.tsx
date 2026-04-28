@@ -9,8 +9,8 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = 'Ebru Erten | Film Yapımcısı & Senarist',
-  description = 'Ebru Erten — Türkiye\'nin en başarılı film yapımcılarından ve senaristlerinden biri. Recep İvedik, Ali Kundilli, Çılgın Dersane, Burçlar gibi gişe rekorları kıran filmlerin yapımcısı. Dragon Film & DuvaFilm kurucusu.',
+  title = 'Ebru Erten | Film Yapımcısı & Reklamcı',
+  description = 'Ebru Erten — Türkiye\'nin en başarılı film yapımcılarından ve Reklamcılerinden biri. Recep İvedik, Ali Kundilli, Çılgın Dersane, Burçlar gibi gişe rekorları kıran filmlerin yapımcısı. Dragon Film & DuvaFilm kurucusu.',
   canonical,
   ogType = 'website',
   jsonLd,

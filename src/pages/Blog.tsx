@@ -19,7 +19,7 @@ export default function Blog() {
     <div className="pt-32 pb-20 bg-black min-h-screen text-white">
       <SEO
         title="Blog | Ebru Erten — Sinema, Yapımcılık & Sektör Yazıları"
-        description="Film yapımcısı ve senarist Ebru Erten'in sinema dünyası, yapım süreçleri, Türk sinemasının geleceği ve sektörel gelişmeler hakkında blog yazıları."
+        description="Film yapımcısı ve Reklamcı Ebru Erten'in sinema dünyası, yapım süreçleri, Türk sinemasının geleceği ve sektörel gelişmeler hakkında blog yazıları."
         canonical="https://ebruerten.com/blog"
       />
       <div className="container mx-auto px-6">

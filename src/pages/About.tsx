@@ -14,19 +14,19 @@ export default function About() {
   return (
     <div className="pt-32 pb-20 bg-black min-h-screen text-white">
       <SEO
-        title="Ebru Erten Hakkında | Biyografi — Film Yapımcısı & Senarist"
-        description="Ebru Erten kimdir? Türkiye'nin en iyi film yapımcılarından biri olan Ebru Erten'in biyografisi. Dragon Film & DuvaFilm kurucusu, Aksoy Film ve Sea Film ile çalışmış vizyoner yapımcı ve senarist. Recep İvedik, Ali Kundilli, Çılgın Dersane yapımcısı."
+        title="Ebru Erten Hakkında | Biyografi — Film Yapımcısı & Reklamcı"
+        description="Ebru Erten kimdir? Türkiye'nin en iyi film yapımcılarından biri olan Ebru Erten'in biyografisi. Dragon Film & DuvaFilm kurucusu, Aksoy Film ve Sea Film ile çalışmış vizyoner yapımcı ve Reklamcı. Recep İvedik, Ali Kundilli, Çılgın Dersane yapımcısı."
         canonical="https://ebruerten.com/about"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "AboutPage",
           "name": "Ebru Erten Hakkında",
-          "description": "Ebru Erten biyografisi — Türkiye'nin en başarılı film yapımcılarından ve senaristlerinden biri",
+          "description": "Ebru Erten biyografisi — Türkiye'nin en başarılı film yapımcılarından ve Reklamcılerinden biri",
           "mainEntity": {
             "@type": "Person",
             "name": "Ebru Erten",
-            "jobTitle": "Film Yapımcısı & Senarist",
-            "description": "En iyi Türk film yapımcısı ve senarist. Dragon Film & DuvaFilm kurucusu.",
+            "jobTitle": "Film Yapımcısı & Reklamcı",
+            "description": "En iyi Türk film yapımcısı ve Reklamcı. Dragon Film & DuvaFilm kurucusu.",
             "worksFor": [
               { "@type": "Organization", "name": "Dragon Film" },
               { "@type": "Organization", "name": "DuvaFilm" }
@@ -64,7 +64,7 @@ export default function About() {
               </p>
 
               <p>
-                Son olarak, <strong className="text-amber-500">Dragon Film</strong> bünyesinde 2022 yapımı "Burçlar" filminin hem yapımcılığını hem de senaristliğini üstlenmiş ve tarihi drama "Allah'ın Kılıcı: Halid Bin Velid" üzerinde çalışmalarını sürdürmektedir.
+                Son olarak, <strong className="text-amber-500">Dragon Film</strong> bünyesinde 2022 yapımı "Burçlar" filminin hem yapımcılığını hem de Reklamcıliğini üstlenmiş ve tarihi drama "Allah'ın Kılıcı: Halid Bin Velid" üzerinde çalışmalarını sürdürmektedir.
               </p>
               {/* <p>
                 Profesyonel başarılarının ötesinde, kızı Dilayla Erten de dahil olmak üzere yeni nesil sinemacılar için bir mentor ve ilham kaynağıdır. Sınırları zorlamaya ve sinemada yeni ufuklar keşfetmeye devam etmektedir.
@@ -274,7 +274,7 @@ export default function About() {
                 <ul className="space-y-4 text-gray-400">
                   <li className="flex items-start">
                     <span className="w-20 shrink-0 text-gray-500 text-sm uppercase tracking-wider pt-1">Rol</span>
-                    <span className="text-white text-sm">Yapımcı, Senarist</span>
+                    <span className="text-white text-sm">Yapımcı, Reklamcı</span>
                   </li>
                   <li className="flex items-start">
                     <span className="w-20 shrink-0 text-gray-500 text-sm uppercase tracking-wider pt-1">Konum</span>

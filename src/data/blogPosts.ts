@@ -41,7 +41,7 @@ Netflix, Disney+, BluTV ve Gain gibi dijital platformlar, Türk sinemasının en
 
 - **Bütçe artışı:** Yapımcılar artık daha yüksek bütçelerle çalışabilir hale geldi. Vizyon filmleri kadar kaliteli prodüksiyonlar, platform özel içerikleri olarak üretiliyor.
 - **Küresel erişim:** Türk dizileri ve filmleri artık 150'den fazla ülkede izleniyor. Bu, hikaye anlatıcılarımızın evrensel temalarla daha cesur projeler üretmelerini teşvik ediyor.
-- **Yeni yetenekler:** Platform yapımları, genç yönetmenlere ve senaristlere kapı açıyor. Geleneksel sinema endüstrisinde yıllarca beklemek zorunda kalan yetenekler, artık daha hızlı fırsat buluyor.
+- **Yeni yetenekler:** Platform yapımları, genç yönetmenlere ve Reklamcılere kapı açıyor. Geleneksel sinema endüstrisinde yıllarca beklemek zorunda kalan yetenekler, artık daha hızlı fırsat buluyor.
 
 ### Yeni Nesil Yönetmenler
 

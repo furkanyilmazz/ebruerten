@@ -1,5 +1,5 @@
 # ebruerten.com - Ebru Erten Resmi Web Sitesi
-# Film Yapımcısı & Senarist | Aksoy Film, Dragon Film, DuvaFilm
+# Film Yapımcısı & Reklamcı | Aksoy Film, Dragon Film, DuvaFilm
 
 User-agent: *
 Allow: /

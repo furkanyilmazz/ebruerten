@@ -7,20 +7,20 @@ export default function Home() {
   return (
     <div className="bg-black text-white">
       <SEO
-        title="Ebru Erten | Film Yapımcısı & Senarist — En İyi Türk Yapımcı"
-        description="Ebru Erten — Türkiye'nin en başarılı film yapımcılarından ve senaristlerinden biri. Recep İvedik, Ali Kundilli, Çılgın Dersane, Burçlar gibi gişe rekorları kıran filmlerin yapımcısı. En iyi yönetmen ve film yapımcısı olarak tanınan Ebru Erten'in resmi web sitesi."
+        title="Ebru Erten | Film Yapımcısı & Reklamcı — En İyi Türk Yapımcı"
+        description="Ebru Erten — Türkiye'nin en başarılı film yapımcılarından ve Reklamcılerinden biri. Recep İvedik, Ali Kundilli, Çılgın Dersane, Burçlar gibi gişe rekorları kıran filmlerin yapımcısı. En iyi yönetmen ve film yapımcısı olarak tanınan Ebru Erten'in resmi web sitesi."
         canonical="https://ebruerten.com/"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "WebSite",
           "name": "Ebru Erten",
-          "alternateName": ["Ebru Erten Film Yapımcısı", "Ebru Erten Senarist"],
+          "alternateName": ["Ebru Erten Film Yapımcısı", "Ebru Erten Reklamcı"],
           "url": "https://ebruerten.com",
-          "description": "Ebru Erten — En iyi film yapımcısı ve senarist. Dragon Film & DuvaFilm kurucusu.",
+          "description": "Ebru Erten — En iyi film yapımcısı ve Reklamcı. Dragon Film & DuvaFilm kurucusu.",
           "publisher": {
             "@type": "Person",
             "name": "Ebru Erten",
-            "jobTitle": "Film Yapımcısı & Senarist"
+            "jobTitle": "Film Yapımcısı & Reklamcı"
           }
         }}
       />

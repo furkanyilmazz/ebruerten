@@ -60,8 +60,8 @@ export default function Contact() {
   return (
     <div className="pt-32 pb-20 bg-black min-h-screen text-white">
       <SEO
-        title="İletişim | Ebru Erten — Film Yapımcısı & Senarist"
-        description="Film yapımcısı ve senarist Ebru Erten ile iletişime geçin. Dragon Film & DuvaFilm — proje teklifleri, iş birlikleri ve sorularınız için. İstanbul, Türkiye."
+        title="İletişim | Ebru Erten — Film Yapımcısı & Reklamcı"
+        description="Film yapımcısı ve Reklamcı Ebru Erten ile iletişime geçin. Dragon Film & DuvaFilm — proje teklifleri, iş birlikleri ve sorularınız için. İstanbul, Türkiye."
         canonical="https://ebruerten.com/contact"
         jsonLd={{
           "@context": "https://schema.org",

@@ -47,7 +47,7 @@ export default function BlogPost() {
             "@type": "Person",
             "name": "Ebru Erten",
             "url": "https://ebruerten.com",
-            "jobTitle": "Film Yapımcısı & Senarist"
+            "jobTitle": "Film Yapımcısı & Reklamcı"
           },
           "publisher": {
             "@type": "Person",
@@ -141,7 +141,7 @@ export default function BlogPost() {
               <div>
                 <h4 className="text-lg font-serif text-white mb-2">{post.author}</h4>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Film yapımcısı ve senarist. Dragon Film ve DuvaFilm kurucusu. Burçlar, Ali Kundilli, Çılgın Dersane gibi yapımların arkasındaki isim.
+                  Film yapımcısı ve Reklamcı. Dragon Film ve DuvaFilm kurucusu. Burçlar, Ali Kundilli, Çılgın Dersane gibi yapımların arkasındaki isim.
                 </p>
               </div>
             </div>

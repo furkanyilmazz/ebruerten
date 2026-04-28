@@ -31,7 +31,7 @@ export default function Footer() {
           &copy; {currentYear} Ebru Erten. Tüm hakları saklıdır.
         </p>
         <p className="text-gray-700 text-xs mt-2">
-          Film Yapımcısı & Senarist
+          Film Yapımcısı & Reklamcı
         </p>
       </div>
     </footer>

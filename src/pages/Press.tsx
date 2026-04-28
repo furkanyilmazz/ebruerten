@@ -8,7 +8,7 @@ const pressItems = [
     title: "Ebru Erten — Filmografi ve Biyografi",
     source: "Beyazperde",
     date: "Güncel",
-    description: "Ebru Erten'in yapımcılık ve senaristlik kariyerindeki tüm projeler, filmografi ve detaylı biyografi bilgileri.",
+    description: "Ebru Erten'in yapımcılık ve Reklamcılik kariyerindeki tüm projeler, filmografi ve detaylı biyografi bilgileri.",
     link: "https://www.beyazperde.com/sanatcilar/sanatci-836478/",
     category: "Biyografi"
   },
@@ -35,7 +35,7 @@ const pressItems = [
     title: "Burçlar Filmi — Kadro, Konu ve Detaylar",
     source: "HaberTürk",
     date: "2022",
-    description: "Ebru Erten'in yapımcılığını ve senaristliğini üstlendiği 'Burçlar' filminin konusu, kadrosu ve tüm detayları.",
+    description: "Ebru Erten'in yapımcılığını ve Reklamcıliğini üstlendiği 'Burçlar' filminin konusu, kadrosu ve tüm detayları.",
     link: "https://www.haberturk.com/burclarin-konusu-ne-burclarda-kimler-oynuyor-3530133-magazin",
     category: "Film Haberi"
   },
