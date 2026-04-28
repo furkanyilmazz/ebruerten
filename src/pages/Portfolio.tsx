@@ -14,7 +14,7 @@ function getProjectSrc(path: string): string {
 interface Project {
   id: number
   title: string
-  role: string
+  role?: string
   year: string
   image: string
   type: string
@@ -25,7 +25,6 @@ const projects: Project[] = [
   {
     id: 1,
     title: "Fetih 1453",
-    role: "Yapımcı",
     year: "2012",
     type: "Sinema Filmi",
     image: getProjectSrc("fetih1453/fetihkapak.png"),
@@ -34,7 +33,6 @@ const projects: Project[] = [
   {
     id: 2,
     title: "Burçlar",
-    role: "Yapımcı & Senarist",
     year: "2022",
     type: "Sinema Filmi",
     image: getProjectSrc("burclar/burclarkapak.png"),
@@ -43,7 +41,6 @@ const projects: Project[] = [
   {
     id: 3,
     title: "Erkekler",
-    role: "Yapımcı",
     year: "2019",
     type: "Sinema Filmi",
     image: getProjectSrc("erkekler/erkekler.png"),
@@ -52,7 +49,6 @@ const projects: Project[] = [
   {
     id: 4,
     title: "Büyü 2",
-    role: "Yapımcı",
     year: "2017",
     type: "Sinema Filmi",
     image: getProjectSrc("büyü 2/büyü2.png"),
@@ -61,7 +57,6 @@ const projects: Project[] = [
   {
     id: 5,
     title: "Ali Kundilli",
-    role: "Yapımcı",
     year: "2015",
     type: "Sinema Filmi",
     image: getProjectSrc("ali kundilli/alikundilli.png"),
@@ -70,7 +65,6 @@ const projects: Project[] = [
   {
     id: 6,
     title: "Dedemin İnsanları",
-    role: "Yapımcı",
     year: "2011",
     type: "Sinema Filmi",
     image: getProjectSrc("dedemin insanları/dedemininsanları.png"),
@@ -79,7 +73,6 @@ const projects: Project[] = [
   {
     id: 7,
     title: "Çılgın Dersane 3",
-    role: "Yapımcı",
     year: "2014",
     type: "Sinema Filmi",
     image: getProjectSrc("çılgın dersane 3/çılgındersane3.png"),
@@ -88,7 +81,6 @@ const projects: Project[] = [
   {
     id: 8,
     title: "Çılgın Dersane Kampta",
-    role: "Yapımcı",
     year: "2008",
     type: "Sinema Filmi",
     image: getProjectSrc("çılgın dersane 2/çılgındersane2.png"),
@@ -97,7 +89,6 @@ const projects: Project[] = [
   {
     id: 9,
     title: "Çılgın Dersane Üniversitede",
-    role: "Yapımcı",
     year: "2014",
     type: "TV Dizisi",
     image: getProjectSrc("Çılgın dersane üniversitede/çılgındersaneuni.webloc.png"),
@@ -106,7 +97,6 @@ const projects: Project[] = [
   {
     id: 10,
     title: "Fatih",
-    role: "Yapımcı",
     year: "2013",
     type: "TV Dizisi (Kanal D)",
     image: getProjectSrc("fatih dizisi/fatih.png"),
@@ -115,7 +105,6 @@ const projects: Project[] = [
   {
     id: 11,
     title: "Recep İvedik",
-    role: "Yapımcı",
     year: "2008",
     type: "Sinema Filmi",
     image: getProjectSrc("recep ivedik 1/recep1.png"),
@@ -124,7 +113,6 @@ const projects: Project[] = [
   {
     id: 12,
     title: "Recep İvedik 2",
-    role: "Yapımcı",
     year: "2009",
     type: "Sinema Filmi",
     image: getProjectSrc("recep ivedik 2/recep2.png"),
@@ -133,7 +121,6 @@ const projects: Project[] = [
   {
     id: 13,
     title: "Recep İvedik 3",
-    role: "Yapımcı",
     year: "2010",
     type: "Sinema Filmi",
     image: getProjectSrc("recep ivedik 3/recep3.png"),
@@ -142,7 +129,6 @@ const projects: Project[] = [
   {
     id: 14,
     title: "Romantik Komedi",
-    role: "Yapımcı",
     year: "2010",
     type: "Sinema Filmi",
     image: getProjectSrc("romantik komedi /romantikkomedi.png"),
@@ -151,7 +137,6 @@ const projects: Project[] = [
   {
     id: 15,
     title: "Beyaz Melek",
-    role: "Yapımcı",
     year: "2007",
     type: "Sinema Filmi",
     image: getProjectSrc("beyaz melek/beyazmelek.png"),
@@ -160,7 +145,6 @@ const projects: Project[] = [
   {
     id: 16,
     title: "Binbir Gece",
-    role: "Yapımcı",
     year: "2006",
     type: "TV Dizisi",
     image: getProjectSrc("binbir gece/binbirgece.png"),
@@ -169,7 +153,6 @@ const projects: Project[] = [
   {
     id: 17,
     title: "Çalıkuşu",
-    role: "Yapımcı",
     year: "2013",
     type: "TV Dizisi",
     image: getProjectSrc("çalıkuşu dizisi/çalıkuşu.png"),
@@ -178,7 +161,6 @@ const projects: Project[] = [
   {
     id: 18,
     title: "Hanımın Çiftliği",
-    role: "Yapımcı",
     year: "2009",
     type: "TV Dizisi",
     image: getProjectSrc("hanımın çiftliği/hanımınciftligi.webloc.png"),

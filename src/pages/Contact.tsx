@@ -103,7 +103,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-white font-medium mb-1 text-sm uppercase tracking-wider">E-posta</h4>
-                    <p className="text-gray-400 group-hover:text-amber-500 transition-colors">info@dragonfilm.com.tr & ebru.erten@dragonfilm.com.tr</p>
+                    <p className="text-gray-400 group-hover:text-amber-500 transition-colors">info@dragonfilm.com.tr & ebruerten@dragonfilm.com.tr</p>
                   </div>
                 </a>
                 

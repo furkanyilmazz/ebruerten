@@ -5,7 +5,13 @@ import { Menu, X, Instagram } from 'lucide-react'
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const location = useLocation()
+  const [prevLocation, setPrevLocation] = useState(location.pathname)
   const [scrolled, setScrolled] = useState(false)
+
+  if (location.pathname !== prevLocation) {
+    setPrevLocation(location.pathname)
+    setIsOpen(false)
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,10 +20,6 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
-
-  useEffect(() => {
-    setIsOpen(false)
-  }, [location])
 
   const navLinks = [
     { name: 'Ana Sayfa', path: '/' },
